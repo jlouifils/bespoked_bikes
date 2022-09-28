@@ -105,11 +105,20 @@ export default class SaleDetail extends React.Component {
             <div className="Sale--stats">
               <ul className="Sale--stats--list">
                 <li className="Sale--stats--list--item">
-                  <h4>Estimated Time</h4>
-                  <h3>{Sale.estimatedTime} hours</h3>
+                  <h4>product</h4>
+                  <h3>{Sale.product} product</h3>
                 </li>
                 <li className="Sale--stats--list--item">
-                  <h4>Materials Needed</h4>
+                  <h4>Sale Person</h4>
+                  <h3>{Sale.salePerson} sale person</h3>
+                  </li>
+                  <li className="Sale--stats--list--item">
+                  <h4>customer</h4>
+                  <h3>{Sale.customer} customer</h3>
+                </li>
+                <li className="Sale--stats--list--item">
+                  <h4>Sale Date</h4>
+                  <h3>{Sale.saleDate} sale date</h3>
                   <ul>
                    <ReactMarkdown source={` * ${Sale.materialsNeeded}`} /> 
                   </ul>
