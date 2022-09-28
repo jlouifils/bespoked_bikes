@@ -1,0 +1,19 @@
+.main {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 80px 0 80px 0;
+  background-color: bisque;
+}
+
+.sub-main {
+  display: flex;
+  justify-content: center;
+  height: 550px;
+  width: 35%;
+  box-shadow: 11px 13px 12px 13px rgb(207, 207, 207);
+  padding-top: 35px;
+  border-radius: 65px;
+  background-color: aquamarine;
+}
+

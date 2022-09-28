@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet" type="text/css">
+  <link href="../styles/global.css" rel="stylesheet">
+  <title>BeSpoked Bikes</title>
+</head>
+
+<body>
+  <div id="root">
+    <div>
+      <div class="header">
+        <div class="bounds">
+          <h1 class="header--logo">sale</h1>
+          <nav><span>Welcome James Jacob!</span><a class="signout" href="index.html">Sign Out</a></nav>
+        </div>
+      </div>
+      <hr>
+      <div class="bounds sale--detail">
+        <h1>Create Sale</h1>
+        <div>
+          <div>
+            <h2 class="validation--errors--label">Validation errors</h2>
+            <div class="validation-errors">
+              <ul>
+                <li>Please provide a value for "Product"</li>
+                <li>Please provide a value for "Sale Person"</li>
+                <li>Please provide a value for "customer"</li>
+                <li>Please provide a value for "sale date"</li>
+              </ul>
+            </div>
+          </div>
+          <form>
+            <div class="grid-66">
+              <div class="sale--header">
+                <h4 class="sale--label">sale</h4>
+                <div><input id="title" name="title" type="text" class="input-title sale--title--input" placeholder="sale title..."
+                    value=""></div>
+              </div>
+              <div class="sale--description">
+                <div><textarea id="description" name="description" class="" placeholder="sale description..."></textarea></div>
+              </div>
+            </div>
+            <div class="grid-25 grid-right">
+              <div class="sale--stats">
+                <ul class="sale--stats--list">
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="grid-100 pad-bottom"><button class="button" type="submit">Create sale</button><button class="button button-secondary" onclick="event.preventDefault(); location.href='index.html';">Cancel</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
