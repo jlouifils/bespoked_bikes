@@ -18,7 +18,6 @@ export default class UpdateProduct extends React.Component {
         commissionPercentage: '',
         errors: []
         };
-        // found out how to use this.handleSubmit/Cancel on stackoverflow https://stackoverflow.com/questions/41507337/in-redux-when-do-i-need-to-use-bindthis
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
     }

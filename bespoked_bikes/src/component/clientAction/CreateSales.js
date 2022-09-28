@@ -12,7 +12,7 @@ export default class CreateSales extends React.Component {
             saleDate: "",
             errors: []
         };
-        // found out how to use this.handleSubmit on stackoverflow https://stackoverflow.com/questions/41507337/in-redux-when-do-i-need-to-use-bindthis
+
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -25,7 +25,6 @@ export default class CreateSales extends React.Component {
     handleSubmit = (evt) => {
         evt.preventDefault();
 
-       // found a website that help better use of axios https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index 
         axios({
             method: 'post',
             url: 'http://localhost:5000/api/Sales',

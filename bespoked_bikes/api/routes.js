@@ -182,5 +182,15 @@ router.get("/saleperson/commission", function(req, res, next) {
                 });
   });
 
+//GET discount
+//ROUTE FOR DISCOUNT
+router.get("/discount", function(req, res, next) {
+  SalePerson.find({firstName: firstName})
+              .populate(Product.get('name'), 'beginDate', 'endDate', 'discountPercentage')
+              .exec(function(err,courses){
+                  if(err) return next(err);
+                  res.json(courses);
+              });
+});
 
 module.exports = router;

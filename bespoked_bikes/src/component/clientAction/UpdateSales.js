@@ -17,8 +17,6 @@ export default class UpdateSales extends React.Component {
         saleDate: '',
         errors: []
         };
-        // found out how to use this.handleSubmit/Cancel on stackoverflow https://stackoverflow.com/questions/41507337/in-redux-when-do-i-need-to-use-bindthis
-        this.handleSubmit = this.handleSubmit.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
     }
 
@@ -30,7 +28,6 @@ export default class UpdateSales extends React.Component {
     handleSubmit = (e) => {
       const {match: { params }} = this.props;
       e.preventDefault();
-// found a website that help better use of axios https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index
         axios ({
             method: 'put',
             url: `http://localhost:5000/api/Sales/${params.id}`,

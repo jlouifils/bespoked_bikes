@@ -14,7 +14,6 @@ export default class SaleDetail extends React.Component {
     this.handleDelete = this.handleDelete.bind(this); 
   }
 
-  // got this info from erik from the slack that he post about Route Params https://scotch.io/Sales/using-react-router-4/route-params
   componentDidMount() {
     const {
       match: { params }
